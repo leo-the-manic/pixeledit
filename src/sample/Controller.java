@@ -52,6 +52,11 @@ public class Controller {
         int y = (int)evt.getY();
         Color selectedColor = colorPicker.getValue();
 
+        // jfx drag can go beyond canvas edges, see iss #2
+        if(x < 0 || y < 0 || x > image.getWidth() || y > image.getHeight()) {
+            return;
+        }
+
         // apply input
         writer.setColor(x, y, selectedColor);
         drawImage();
