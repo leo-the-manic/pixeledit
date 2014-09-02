@@ -37,6 +37,7 @@ public class Controller {
         GraphicsContext g = imageView.getGraphicsContext2D();
         g.setFill(Paint.valueOf("#FFF"));
         g.fillRect(0, 0, imageView.getWidth(), imageView.getHeight());
+        colorPicker.setValue(Color.BLACK);
     }
 
     private void putPixel(GraphicsContext g, int x, int y) {
