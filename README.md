@@ -8,8 +8,8 @@ A simple image editor geared towards pixel art. Created with JavaFX.
 Current features (subject to change):
 
 * you can put pixels on a white background
-* dragging the left mouse button across the canvas creates a stream of
-  disconnected pixels
+* dragging the left mouse button across the canvas creates a stream/line of
+  pixels
 * the background is 300x275 px
 * you can save that creation to a file called "image.png"
 
